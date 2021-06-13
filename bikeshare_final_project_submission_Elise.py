@@ -16,6 +16,7 @@ days = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
 days2 = ['mon','tues','wed','thurs','fri','sat','sun']
 days_short = dict(zip(days2, days))
 
+#Ask the end user to specify a city to analyze
 def get_city():
     """
     Asks user to specify a city to analyze.
