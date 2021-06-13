@@ -13,8 +13,8 @@ months3 = ['1', '2', '3', '4', '5', '6']
 months_short = dict(zip(months2, months))
 months_int = dict(zip(months3, months))
 days = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
-days2 = ['mon','tues','wed','thurs','fri','sat','sun']
-days_short = dict(zip(days2, days))
+days_2 = ['mon','tues','wed','thurs','fri','sat','sun']
+days_short = dict(zip(days_2, days))
 
 
 #Ask the user to specify a city to analyse. It can only be new york city, chicago, or washington"
@@ -97,7 +97,7 @@ def get_other_stats():
                 day = day.title()
                 break
             #need to add if they want for all days
-            elif day.lower() in days2:
+            elif day.lower() in days_2:
                 print(f"You would like to see data for {days_short.get(day).title()}.")
                 day = days_short.get(day).title()
                 break
@@ -217,6 +217,7 @@ def main():
         five_lines(city, month, day,df)
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
+            print("Thank you for exploring bikeshare data with me!")
             break
 
 if __name__ == "__main__":
