@@ -16,6 +16,8 @@ days = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
 days2 = ['mon','tues','wed','thurs','fri','sat','sun']
 days_short = dict(zip(days2, days))
 
+
+#Ask the user to specify a city to analyse. It can only be new york city, chicago, or washington"
 def get_city():
     """
     Asks user to specify a city to analyze.
@@ -35,7 +37,7 @@ def get_city():
     return city, city_df
 
 
-#provide some basic city-time stats (most common month, day of week, hour)
+#provide the user some basic city-time stats (most common month, day of week, hour)
 def time_stats(city, city_df):
     """Displays statistics on the most frequent times of travel."""
     print(f"\nCalculating The Most Frequent Times of Travel for {city}...\n")
@@ -58,7 +60,7 @@ def time_stats(city, city_df):
     time_taken = "\nThis took %s seconds." % (time.time() - start_time)
     return print(month_stats, day_stats, hour_stats, "\n", time_taken, "\n", "-"*40)
 
-# get user input for month (all, january, february, ... , june)
+# get user input for month (all, january, february, ... , june) and day of week
 def get_other_stats():
     """
     Asks user to specify a month and a day of the week to analyze.
