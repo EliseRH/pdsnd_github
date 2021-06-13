@@ -13,8 +13,8 @@ months3 = ['1', '2', '3', '4', '5', '6']
 months_short = dict(zip(months2, months))
 months_int = dict(zip(months3, months))
 days = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
-days2 = ['mon','tues','wed','thurs','fri','sat','sun']
-days_short = dict(zip(days2, days))
+days_2 = ['mon','tues','wed','thurs','fri','sat','sun']
+days_short = dict(zip(days_2, days))
 
 #Ask the end user to specify a city to analyze
 def get_city():
@@ -96,7 +96,7 @@ def get_other_stats():
                 day = day.title()
                 break
             #need to add if they want for all days
-            elif day.lower() in days2:
+            elif day.lower() in days_2:
                 print(f"You would like to see data for {days_short.get(day).title()}.")
                 day = days_short.get(day).title()
                 break
