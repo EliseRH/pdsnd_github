@@ -216,6 +216,7 @@ def main():
         five_lines(city, month, day,df)
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
+            print("Thank you for exploring bikeshare data with me!")
             break
 
 if __name__ == "__main__":
